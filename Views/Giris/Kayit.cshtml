@@ -1,0 +1,37 @@
+﻿@model vtd
+
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Kayit</title>
+</head>
+<body>
+    <form method="post" asp-action="Kayit">
+        <p>
+            <label asp-for="Name">İsim :</label>
+            <input asp-for="Name" />
+        </p>
+        <p>
+            <label asp-for="surname">Soyisim :</label>
+            <input asp-for="surname" />
+        </p>
+        <p>
+            <label asp-for="TC">Tc no :</label>
+            <input asp-for="TC" />
+        </p>
+        <p>
+            <label asp-for="phone">Telefon :</label>
+            <input asp-for="phone" />
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
